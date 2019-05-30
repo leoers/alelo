@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Credicard Alelo</title>   
+</head>
+<body>
+    <main class="container">
+        <header>
+            <img src="img/logo.png" alt="Credicard" />
+        </header>
+        <article>
+            <section class="instruction">
+                <div class="instruction-text-first">
+                    <p class="desktop">Responda às
+                    perguntas ao lado
+                    para finalizarmos a
+                    habilitação da
+                    bandeira Alelo.</p>
+                    <p class="mobile">Responda às
+                        perguntas abaixo
+                        para finalizarmos a
+                        habilitação da
+                        bandeira Alelo.
+                    </p>
+                </div>
+                <div>
+                    <figure>
+                        <img src="img/logo-alelo.png" alt="Alelo"/>
+                    </figure>
+                </div>
+                <div class="instruction-text-second">
+                    <p>Lembre-se de que é
+                    necessário entrar em
+                    contato com a
+                    bandeira pelos
+                    telefones abaixo para
+                    a negociação das
+                    taxas.<br /><br />
+                    
+                    4002-5011 (Capitais e
+                    Regiões
+                    Metropolitanas) e
+                    0800-570 5011
+                    (demais localidades)</p>
+                </div>
+            </section>
+            <section class="form">
+                <form action="#" method="POST" name="form" id="myForm" onSubmit="return validar()">
+                    <div class="text">
+                        <h4 class="form-valida">Preencha todos os campos vazios:</h2>
+                        <label>Preencha os dados abaixo:</label><br />
+                        <input type="text" class="text-value" name="codigo" placeholder="Código do Cliente" /><br />
+                        <div class="help">
+                            <input type="number" class="text-value" name="cnpj" placeholder="CNPJ (apenas números)" />
+                            <div class="help-position">
+                                <p class="ajuda">?</p>
+                                <span class="hide">Este é o seu número de
+                                usuário.Você pode
+                                encontrá-lo no seu e-mail
+                                de boas-vindas ou nos
+                                comprovantes emitidos
+                                pela sua maquininha.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check">
+                        <label>Em quais dias o seu estabelecimento fica aberto?</label><br />
+                        <div class="check-col">
+                            <div>
+                                <input type="checkbox" class="check-semana" name="segunda" value="Segunda a sexta-feira" /><p>Segunda a sexta-feira</p>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="check-semana" name="sabado" value="Sábado" /><p>Sábado</p>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="check-semana" name="doming" value="Domingo" /><p>Domingo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check">
+                        <label>Qual o horário de funcionamento?</label><br />
+                        <div class="check-col">
+                            <div>
+                                <input type="checkbox" class="check-horario" name="Comercial" value="Comercial" /><p>Comercial</p>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="check-horario" name="Noturno" value="Noturno" /><p>Noturno</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check">
+                        <label>Quais cartões da Alelo você deseja habilitar?</label><br />
+                        <div class="check-col">
+                            <div>
+                                <input type="checkbox" class="check-cartoes" name="Alimentacao" value="Alimentação" /><p>Alimentação</p>
+                            </div>
+                            <div>
+                                <input type="checkbox" class="check-cartoes" name="Refeicao value=" value="Refeição" /><p>Refeição</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <div class="help">
+                            <label>Para Alelo Alimentação:</label>
+                            <div>
+                                <p class="ajuda">?</p>
+                                <span class="hide">Responda apenas se você
+                                    deseja aceitar este cartão.</span>
+                            </div>
+                        </div>                        
+                        <input type="number" class="text-value" name="qtdmaquinas" placeholder="Quantas maquininhas aceitarão o cartão?" /><br />
+                        <input type="text" class="text-value" name="areaalimentacao" placeholder="Qual a área de alimentação (m2)?" />
+                    </div>
+                    <div class="text">
+                        <div class="help">
+                            <label>Para Alelo Refeição:</label>
+                            <div>
+                                <p class="ajuda">?</p>
+                                <span class="hide">Responda apenas se você
+                                deseja aceitar este cartão.</span>
+                            </div>
+                        </div>
+                        <input type="number" class="text-value" name="qtdmesas" placeholder="Quantas mesas existem no local?" /><br />
+                        <input type="number" class="text-value" name="qtdcadeiras" placeholder="Quantas cadeiras existem no local?" /><br />
+                        <input type="text" class="text-value" name="arearefeicao" placeholder="Qual a área de refeicão (m2)?" />
+                    </div>
+                    <div class="button">
+                        <p>Campos de preenchimento obrigatório.</p>
+                        <input type="submit" id="enviar" value="Enviar" />
+                    </div>
+                </form>
+            </section>
+        </article>
+    </main>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

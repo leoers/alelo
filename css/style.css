@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header{
+    background-color: #054783;
+    width: 100%;
+    display: table;
+}
+
+header img{
+    padding: 26px 28px 26px 0;
+    float: right;
+}
+
+/* Article */
+
+article{
+    background-color: #bcbcbc;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 11px 0px;
+}
+
+article section{
+    padding: 12px 12px;
+}
+
+article .instruction{
+    width: 29%;
+}
+
+article .instruction div{
+    padding: 18px 5px;
+}
+
+article .instruction div figure img{
+    display: block;
+    margin: 0 auto;
+}
+
+article .instruction .instruction-text-first p, article .instruction .instruction-text-second p{
+    font-weight: bold;
+}
+
+.desktop{
+    display: block;
+}
+
+.mobile{
+    display: none;
+}
+
+article .instruction .instruction-text-first p{
+    font-size: 20px;
+    color: #001;
+}
+
+.instruction .instruction-text-second{
+    background-color: #1e285a;
+    padding: 20px 15px;
+    border-radius: 25px;
+}
+
+article .instruction .instruction-text-second p{
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+   /*line-height: 21.5px;*/
+}
+
+/* Form */
+
+article .form{
+    width: 64%;
+}
+
+form label{
+    display: block;
+}
+
+form .text input{
+    width: 80%;
+    height: 20px;
+    border-radius: 5px;
+    padding: 5px 10px; 
+    margin: 4px 0;   
+}
+
+form .text, form .check, form .button{
+    padding: 8px 0;
+}
+
+form .check .check-col, form .text .help{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form .text .help{
+    margin: 0 auto;
+    position: relative;
+}
+
+form .text .help label{
+    width: 75%;
+}
+
+form .text .help div{
+    position: relative;
+    display: flex;
+}
+
+form .text .help .help-position{
+    position: absolute;
+    right: 90px;
+    top: 12px;
+}
+
+form .text .help .help-position span{
+    text-align: center;
+}
+
+form .text .help div p, form .text .help div span{
+    background-color: #0c4a84;
+    color: #fff;
+    font-size: 15px;
+}
+
+form .text .help div span:after{
+    content: "";
+    width: 0; 
+    height: 0;
+    position: absolute;
+    left: -22px;
+    top:5px;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 32px solid #0c4a84; 
+    border-radius: 50%;
+}
+
+form .text .help div p{     
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: -5px;
+    line-height: 25px;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+form .text .help div span{
+    position: absolute;
+    width: 210px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-left: 70px;
+    margin-top:-10px;
+}
+
+form .check .check-col div{
+    padding: 2px 7px;
+    display: flex;
+}
+
+form .check .check-col div p{
+    font-size: 14px; 
+    font-weight: bold;
+    padding: 0 0 0 5px;
+}
+
+form .check .check-col div:nth-child(1){
+    width: 180px;
+}
+
+form .button p{
+    font-size: 10px;
+}
+
+form .button input{
+    margin-top: 10px;
+    padding: 24px 32px;
+    background-color: #1999cc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-valida{
+    color:red;
+}
+
+.form-valida, .hide{
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+   article .instruction, article .form{
+        width: 100%;
+    }
+
+    form .text input{
+        width: 93%;
+        height: 20px;
+        border-radius: 5px;
+        padding: 5px 10px; 
+        margin: 4px 0;   
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    form .text .help div span{
+        position: absolute;
+        width: 100px;
+        padding: 7px 10px;
+        border-radius: 10px;
+        margin-left: -40px;
+        margin-top:40px;
+        display: none;
+    }
+
+    form .text .help .help-position {
+        right: 72px;
+    }
+
+    form .text .help div p {
+        margin-right: -40px;
+    }
+
+    form .text .help div span:after{
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #0c4a84;
+        top: -26px; 
+        left: 27%;
+    }
+
+}
